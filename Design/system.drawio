@@ -104,6 +104,18 @@
                 <mxCell id="38" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=11;" parent="1" source="36" target="20" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
+                <mxCell id="39" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="770" y="490" width="330" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=22;" vertex="1" parent="39">
+                    <mxGeometry width="330" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="&lt;h1 style=&quot;font-size: 20px&quot;&gt;Gateway Design:&lt;/h1&gt;&lt;p style=&quot;font-size: 11px&quot;&gt;The gateway is the systems entry point. This is the only point of contact with the outside world.&lt;/p&gt;&lt;p style=&quot;font-size: 11px&quot;&gt;The core must:&lt;/p&gt;&lt;p style=&quot;font-size: 11px&quot;&gt;&lt;/p&gt;&lt;ul style=&quot;font-size: 11px&quot;&gt;&lt;li&gt;Offer an API endpoint for access to the system&lt;/li&gt;&lt;li&gt;Route and manage traffic to and from the system.&lt;/li&gt;&lt;li&gt;Conform to the Core's protocol of communication&lt;/li&gt;&lt;li&gt;Serve all data to the outside world.&lt;/li&gt;&lt;li&gt;Sign requests to avoid direct access to the core bypassing the gateway&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=22;" vertex="1" parent="39">
+                    <mxGeometry width="300" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=1;entryY=0.75;entryDx=0;entryDy=0;fontSize=11;" edge="1" parent="1" source="41" target="24">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
