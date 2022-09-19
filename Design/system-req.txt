@@ -1,0 +1,37 @@
+
+Introduction:
+
+    1. What's the name of the system?
+        ==> TND Creative space.
+
+    2. What is the motivation behind the system?
+        ==> The motivation behind the system is to try and reduce the deployment time of new resources in 
+            to the market, but ensuring that features are ready built and deployed.
+            This is a why of enforcing the DRY principle into software development.
+    3. What exactly will the system do?
+        ==> At the heart of it, the system will be handling smaller "modular" independent systems running,
+            in their own processes and communicating through an event streaming bus (kafka) with the gateway 
+            and making sure that they are well managed and available to the public in the form
+            of API's. 
+    4. What architecture will the system as a whole assume?
+        ==> The system will be modeled and built on the microservices architecture, where every "module"
+            is a service on it's own, and services can also have their services. But every service must
+            perform exactly 1 task and perform it so well.
+        
+System Requirements (Core):
+    1. Functional Requirements
+        a. Manage features (Register/Deregister)
+        b. Communicate with the gateway (encapsulate all the modules behind it)
+            why this configuration? 
+                i.  For system health checks
+                ii. To simplify the gateway's configuration.
+                iii.To standardize the communication between the gateway and the rest of the system.
+                iv. To keep records of what features are available and which aren't will less hassle.
+                v.  To keep up with the SOLID principles of software design.
+        c. Perform periodic system health checks to the modules.
+        
+    2. Non-Functional Requirements:
+        a. Always available
+        b. Consistent, every read should recieve the latest write/write.
+        c. Quick to respond. A feature must never take more than 10ms to server 1MB of data.
+
